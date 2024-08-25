@@ -14,6 +14,12 @@ public class Persona
         this.apellido = null;
     }
 
+    public Persona(String rut, String nombre, String apellido){
+        this.rut = rut;
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
     public String getRut() {
         return rut;
     }

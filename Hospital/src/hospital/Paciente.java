@@ -9,9 +9,9 @@ public class Paciente {
     private int triage; 
     Doctor medico_asignado;
     private String estado_atencion;
-    private String num_habitacion = null; //debe ser un string de verdad?
+    private String num_habitacion = null; //debe ser un string de verdad? // Si ta bien
 
-    public Paciente(Persona datos_paciente, int edad, int sexo, int triage, Doctor medico_asignado, String estado_atencion, String num_cama, String especialidad) {
+    public Paciente() {
         this.datos_paciente = null;
         this.edad = 0;
         this.sexo = 0;
@@ -19,6 +19,27 @@ public class Paciente {
         this.medico_asignado = null;
         this.estado_atencion = "NO";
         this.num_habitacion = null;
+    }
+
+    public Paciente(Persona datos_paciente, int edad, int sexo, int triaje){
+        this.datos_paciente = datos_paciente;
+        this.edad = edad0;
+        this.sexo = sexo;
+        this.triage = triaje;
+        this.medico_asignado = null;
+        this.estado_atencion = "NO";
+        this.num_habitacion = null;
+    }
+
+    public Paciente(Persona datos_paciente, int edad, int sexo, int triage, Doctor medico_asignado, String estado_atencion, String num_habitacion) {
+        // Había un dato llamado num_cama, lo cambié por num_habitación pero sigue la duda de qué hacer con la cama
+        this.datos_paciente = datos_paciente;
+        this.edad = edad;
+        this.sexo = sexo;
+        this.triage = triaje;
+        this.medico_asignado = medico_asignado;
+        this.estado_atencion = estado_atencion;
+        this.num_habitacion = num_habitacion;
     }
 
     public Persona getDatos_paciente() {
