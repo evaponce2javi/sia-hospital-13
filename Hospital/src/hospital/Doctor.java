@@ -12,7 +12,19 @@ public class Doctor
 
     public Doctor() 
     {
-        this.datos_doctor = null;
+        this.datos_doctor = null ;
+        this.triage = 0;
+        this.disponible = true;
+    }
+    public Doctor(Persona datos_doctor, int triaje) 
+    {
+        this.datos_doctor = datos_doctor;
+        this.triage = triaje;
+        this.disponible = true;
+    }
+    public Doctor(Persona datos_doctor) 
+    {
+        this.datos_doctor = datos_doctor;
         this.triage = 0;
         this.disponible = true;
     }
