@@ -1,4 +1,4 @@
-package hospital;
+package hospital; // hola
 
 import hospital.Persona;
 
